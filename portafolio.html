@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Software Chile - Portafolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilos para el modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 60px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+        }
+
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /* Responsivo */
+        @media only screen and (max-width: 700px) {
+            .modal-content {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="imagenes/logo.jpeg" alt="Logo Tienda Pati">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="precios.html">Precios</a></li>
+                <li><a href="portafolio.html">Portafolio</a></li>
+                <li><a href="equipo.html">Equipo</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="hero">
+        <h1>Portafolio</h1>
+    </section>
+    <section class="menu">
+        <div class="item">
+            <div class="img-container">
+                <img src="imagenes/landin2.jpeg" alt="Landing Page" onclick="openModal(this)">
+            </div>
+            <div class="item-content">
+                <h3>Landing Page</h3>
+                <p>Página de aterrizaje optimizada para conversiones.</p>
+                <p class="price">$299.99</p>
+                <a href="https://wa.me/1234567890?text=Estoy%20interesado%20en%20la%20Landing%20Page%20de%20LeonCode.dev" target="_blank">
+                    <button class="whatsapp-button">Enviar mensaje a WhatsApp</button>
+                </a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="img-container">
+                <img src="imagenes/Designer - 2024-07-09T194819.278 copy.jpeg" alt="Landing Page" onclick="openModal(this)">
+            </div>
+            <div class="item-content">
+                <h3>Sitio Web</h3>
+                <p>Desarrollo completo de sitio web profesional.</p>
+                <p class="price">$999.99</p>
+                <a href="https://wa.me/56964855203?text=Hola! Estoy interesad@ en digitalizar mi negocio" target="_blank">
+                    <button class="whatsapp-button">Enviar mensaje a WhatsApp</button>
+                </a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="img-container">
+                <img src="imagenes/Designer - 2024-07-09T194819.278 copy.jpeg" alt="Landing Page" onclick="openModal(this)">
+            </div>
+            <div class="item-content">
+                <h3>Sitio Web</h3>
+                <p>Desarrollo completo de sitio web profesional.</p>
+                <p class="price">$999.99</p>
+                <a href="https://wa.me/56964855203?text=Hola! Estoy interesad@ en digitalizar mi negocio" target="_blank">
+                    <button class="whatsapp-button">Enviar mensaje a WhatsApp</button>
+                </a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="img-container">
+                <img src="imagenes/Designer - 2024-07-09T194819.278 copy.jpeg" alt="Landing Page" onclick="openModal(this)">
+            </div>
+            <div class="item-content">
+                <h3>Sitio Web</h3>
+                <p>Desarrollo completo de sitio web profesional.</p>
+                <p class="price">$999.99</p>
+                <a href="https://wa.me/56964855203?text=Hola! Estoy interesad@ en digitalizar mi negocio" target="_blank">
+                    <button class="whatsapp-button">Enviar mensaje a WhatsApp</button>
+                </a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="img-container">
+                <img src="imagenes/Designer - 2024-07-09T194819.278 copy.jpeg" alt="Landing Page" onclick="openModal(this)">
+            </div>
+            <div class="item-content">
+                <h3>Sitio Web</h3>
+                <p>Desarrollo completo de sitio web profesional.</p>
+                <p class="price">$999.99</p>
+                <a href="https://wa.me/56964855203?text=Hola! Estoy interesad@ en digitalizar mi negocio" target="_blank">
+                    <button class="whatsapp-button">Enviar mensaje a WhatsApp</button>
+                </a>
+            </div>
+        </div>
+
+    </section>  
+    <footer>
+        <section id="socials">
+            <h2>Redes Sociales</h2>
+            <div class="social">
+                <a href="https://www.tiktok.com/@m4m1s4m4?_t=8ny4UEmt8mz&_r=1"><img src="imagenes/tik-tok.png" alt="TikTok"></a>
+                <a href="http://www.youtube.com/@m4t1s4m4"><img src="imagenes/youtube.png" alt="YouTube"></a>
+                <a href="https://www.instagram.com/websoftwarechile?igsh=MWllanVqdGZ4bGFqeg=="><img src="imagenes/instagram (1).png" alt="Instagram"></a>
+                <a href="https://www.facebook.com/share/PBLAvauDFCnhfVsk/?mibextid=qi2Omg"><img src="imagenes/face.png" alt="Facebook"></a>
+                <a href="https://www.tiktok.com/@m4m1s4m4?_t=8ny4UEmt8mz&_r=1"><img src="imagenes/linkedin (1).png" alt="TikTok"></a>
+            </div>
+        </section>
+        <p>&copy; 2024 LeonCode.dev. Todos los derechos reservados.</p>
+    </footer>
+
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="img01">
+    </div>
+    
+    <script>
+        function openModal(element) {
+            var modal = document.getElementById("myModal");
+            var modalImg = document.getElementById("img01");
+            modal.style.display = "block";
+            modalImg.src = element.src;
+        }
+    
+        function closeModal() {
+            var modal = document.getElementById("myModal");
+            modal.style.display = "none";
+        }
+    
+        // Cerrar modal al presionar la tecla Escape
+        document.addEventListener('keydown', function(event) {
+            if (event.key === "Escape") {
+                closeModal();
+            }
+        });
+    </script>
+    

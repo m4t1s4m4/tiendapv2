@@ -1,0 +1,388 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #ffc1cc; /* Rosa pastel */
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+    overflow: hidden; 
+    border-radius: 50px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #f0606c;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+/* Menu Styles */
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.item {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    overflow: hidden;
+    width: calc(33% - 40px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s;
+}
+
+.item:hover {
+    transform: scale(1.05);
+}
+
+.img-container {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.item-content {
+    padding: 15px;
+    text-align: center;
+}
+
+.item-content h3 {
+    margin-top: 0;
+    color: #6b7280;
+    font-size: 1.2em;
+}
+
+.item-content p {
+    color: #555;
+    font-size: 0.9em;
+}
+
+.price {
+    color: #fca5a5;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.whatsapp-button {
+    background-color: #b6e3f0; /* Azul pastel */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.whatsapp-button:hover {
+    background-color: #89c2d9; /* Azul pastel oscuro */
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.member {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    max-width: 100%;
+    text-align: center;
+}
+
+.member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.member-info {
+    margin-bottom: 20px;
+}
+
+.member-info h3 {
+    font-size: 18px;
+    margin: 5px 0;
+    color: #6b7280;
+}
+
+.member-info p {
+    color: #a1a1aa;
+    margin: 5px 0;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-links a {
+    display: inline-block;
+    width: 40px;
+}
+
+.social-links img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    background: #fd7c85; /* Rosa muy claro */
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    font-size: 15px;
+}
+
+footer .social-media a {
+    color: #333;
+    margin: 10px;
+    text-decoration: none;
+}
+
+footer .social-media a:hover {
+    text-decoration: underline;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .item {
+        width: calc(50% - 40px);
+    }
+}
+
+@media (max-width: 600px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item {
+        width: 90%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+#hero {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(155deg, #ff9aa2, #ffb7b2); /* Gradiente rosa pastel */
+    color: #fff;
+    height: 170px;
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#hero h1 {
+    font-size: 3rem;
+}
+
+#hero p {
+    font-size: 1.5rem;
+}
+
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+h2 {
+    color: #ff768f; /* Rosa suave */
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.card {
+    display: inline-block;
+    margin: 1rem;
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    max-height: 150px;
+    border-radius: 10px;
+}
+
+.card h3 {
+    color: #ff9aa2;
+    margin-top: 0.5rem;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.social a img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s;
+}
+
+.social a img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: #ffc1cc;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Responsivo */
+@media only screen and (max-width: 700px) {
+    .modal-content {
+        width: 100%;
+    }
+}
